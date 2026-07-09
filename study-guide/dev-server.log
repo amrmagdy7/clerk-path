@@ -1,0 +1,229 @@
+
+> study-guide@0.1.0 dev
+> next dev --webpack
+
+▲ Next.js 16.2.9 (webpack)
+- Local:         http://localhost:3000
+- Network:       http://172.22.241.192:3000
+- Environments: .env.local
+✓ Ready in 793ms
+⚠ Attempted to load @next/swc-win32-x64-msvc, but an error occurred: \\?\D:\New folder (24)\study-guide\node_modules\@next\swc-win32-x64-msvc\next-swc.win32-x64-msvc.node is not a valid Win32 application.
+\\?\D:\New folder (24)\study-guide\node_modules\@next\swc-win32-x64-msvc\next-swc.win32-x64-msvc.node
+  Skipping creating a lockfile at D:\New folder (24)\study-guide\.next\dev\lock because we're using WASM bindings
+
+○ Compiling / ...
+ GET / 200 in 33.0s (next.js: 28.1s, proxy.ts: 3.7s, application-code: 1176ms)
+ POST / 200 in 1072ms (next.js: 16ms, proxy.ts: 1009ms, application-code: 46ms)
+  └─ ƒ detectKeylessEnvDriftAction() in 4ms ..//node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js
+[browser] Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview (https://fleet-duckling-60.clerk.accounts.dev/npm/@clerk/clerk-js@5/dist/clerk.browser.js:19:7048)
+ GET /study-guide 200 in 2.5s (next.js: 1678ms, proxy.ts: 31ms, application-code: 745ms)
+⨯ ./src/app/study-guide/page.tsx
+Error:   x Unterminated regexp literal
+    ,-[D:\New folder (24)\study-guide\src\app\study-guide\page.tsx:49:1]
+ 46 |           </div>
+ 47 |         </main>
+ 48 |       </div>
+ 49 |     </>
+    :      ^^
+ 50 |   );
+ 51 | }
+    `----
+
+Caused by:
+    0: failed to process js file
+    1: Syntax Error
+    at wasm.wasm.__wbindgen_error_new externref shim (wasm://wasm/wasm.wasm-084a3e6e:wasm-function[35092]:0x14cb866)
+    at wasm.wasm.wasm[1883d881a7905053]::transform_sync (wasm://wasm/wasm.wasm-084a3e6e:wasm-function[1005]:0x666203)
+    at wasm.wasm.wasm_bindgen_futures[9d7b310d6153a321]::future_to_promise::<wasm[1883d881a7905053]::transform::{closure#0}>::{closure#0}::{closure#0} (wasm://wasm/wasm.wasm-084a3e6e:wasm-function[13850]:0x11b9878)
+    at wasm.wasm.<wasm_bindgen_futures[9d7b310d6153a321]::queue::Queue>::new::{closure#0} (wasm://wasm/wasm.wasm-084a3e6e:wasm-function[9603]:0xff85b8)
+    at wasm.wasm.<dyn core[f69e0e472a72c355]::ops::function::FnMut<(_,), Output = _> as wasm_bindgen[d64814e1a33cf728]::closure::WasmClosure>::describe::invoke::<wasm_bindgen[d64814e1a33cf728]::JsValue, ()> (wasm://wasm/wasm.wasm-084a3e6e:wasm-function[34561]:0x14c7a1b)
+    at wasm.wasm.closure5233 externref shim (wasm://wasm/wasm.wasm-084a3e6e:wasm-function[35955]:0x14d0e94)
+Import trace for requested module:
+./src/app/study-guide/page.tsx
+○ Compiling /_error ...
+⨯ ./src/app/study-guide/page.tsx
+Error:   x Unterminated regexp literal
+    ,-[D:\New folder (24)\study-guide\src\app\study-guide\page.tsx:49:1]
+ 46 |           </div>
+ 47 |         </main>
+ 48 |       </div>
+ 49 |     </>
+    :      ^^
+ 50 |   );
+ 51 | }
+    `----
+
+Caused by:
+    0: failed to process js file
+    1: Syntax Error
+    at wasm.wasm.__wbindgen_error_new externref shim (wasm://wasm/wasm.wasm-084a3e6e:wasm-function[35092]:0x14cb866)
+    at wasm.wasm.wasm[1883d881a7905053]::transform_sync (wasm://wasm/wasm.wasm-084a3e6e:wasm-function[1005]:0x666203)
+    at wasm.wasm.wasm_bindgen_futures[9d7b310d6153a321]::future_to_promise::<wasm[1883d881a7905053]::transform::{closure#0}>::{closure#0}::{closure#0} (wasm://wasm/wasm.wasm-084a3e6e:wasm-function[13850]:0x11b9878)
+    at wasm.wasm.<wasm_bindgen_futures[9d7b310d6153a321]::queue::Queue>::new::{closure#0} (wasm://wasm/wasm.wasm-084a3e6e:wasm-function[9603]:0xff85b8)
+    at wasm.wasm.<dyn core[f69e0e472a72c355]::ops::function::FnMut<(_,), Output = _> as wasm_bindgen[d64814e1a33cf728]::closure::WasmClosure>::describe::invoke::<wasm_bindgen[d64814e1a33cf728]::JsValue, ()> (wasm://wasm/wasm.wasm-084a3e6e:wasm-function[34561]:0x14c7a1b)
+    at wasm.wasm.closure5233 externref shim (wasm://wasm/wasm.wasm-084a3e6e:wasm-function[35955]:0x14d0e94)
+Import trace for requested module:
+./src/app/study-guide/page.tsx
+ GET /study-guide 500 in 46s (next.js: 42s, proxy.ts: 1210ms, application-code: 2.1s)
+⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /study-guide 500 in 913ms (next.js: 416ms, proxy.ts: 457ms, application-code: 40ms)
+ GET /study-guide 500 in 136ms (next.js: 19ms, proxy.ts: 34ms, application-code: 84ms)
+ GET /study-guide 500 in 131ms (next.js: 74ms, proxy.ts: 36ms, application-code: 21ms)
+[browser] Uncaught ModuleBuildError: Module build failed (from ./node_modules/next/dist/build/webpack/loaders/next-swc-loader.js):
+Error:   x Unterminated regexp literal
+    ,-[D:\New folder (24)\study-guide\src\app\study-guide\page.tsx:49:1]
+ 46 |           </div>
+ 47 |         </main>
+ 48 |       </div>
+ 49 |     </>
+    :      ^^
+ 50 |   );
+ 51 | }
+    `----
+
+
+Caused by:
+    0: failed to process js file
+    1: Syntax Error
+    at module.exports.__wbindgen_error_new (D:\New folder (24)\study-guide\node_modules\next\wasm\@next\swc-wasm-nodejs\wasm.js:665:17)
+    at wasm.wasm.__wbindgen_error_new externref shim (wasm://wasm/wasm.wasm-084a3e6e:wasm-function[35092]:0x14cb866)
+    at wasm.wasm.wasm[1883d881a7905053]::transform_sync (wasm://wasm/wasm.wasm-084a3e6e:wasm-function[1005]:0x666203)
+    at wasm.wasm.wasm_bindgen_futures[9d7b310d6153a321]::future_to_promise::<wasm[1883d881a7905053]::transform::{closure#0}>::{closure#0}::{closure#0} (wasm://wasm/wasm.wasm-084a3e6e:wasm-function[13850]:0x11b9878)
+    at wasm.wasm.<wasm_bindgen_futures[9d7b310d6153a321]::queue::Queue>::new::{closure#0} (wasm://wasm/wasm.wasm-084a3e6e:wasm-function[9603]:0xff85b8)
+    at wasm.wasm.<dyn core[f69e0e472a72c355]::ops::function::FnMut<(_,), Output = _> as wasm_bindgen[d64814e1a33cf728]::closure::WasmClosure>::describe::invoke::<wasm_bindgen[d64814e1a33cf728]::JsValue, ()> (wasm://wasm/wasm.wasm-084a3e6e:wasm-function[34561]:0x14c7a1b)
+    at wasm.wasm.closure5233 externref shim (wasm://wasm/wasm.wasm-084a3e6e:wasm-function[35955]:0x14d0e94)
+    at __wbg_adapter_50 (D:\New folder (24)\study-guide\node_modules\next\wasm\@next\swc-wasm-nodejs\wasm.js:367:10)
+    at real (D:\New folder (24)\study-guide\node_modules\next\wasm\@next\swc-wasm-nodejs\wasm.js:140:20)
+    at node:internal/process/task_queues:151:7
+    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
+    at AsyncResource.runMicrotask (node:internal/process/task_queues:148:8)
+[browser] ./src/app/study-guide/page.tsx
+Error:   x Unterminated regexp literal
+    ,-[D:\New folder (24)\study-guide\src\app\study-guide\page.tsx:49:1]
+ 46 |           </div>
+ 47 |         </main>
+ 48 |       </div>
+ 49 |     </>
+    :      ^^
+ 50 |   );
+ 51 | }
+    `----
+
+Caused by:
+    0: failed to process js file
+    1: Syntax Error
+    at wasm.wasm.__wbindgen_error_new externref shim (wasm://wasm/wasm.wasm-084a3e6e:wasm-function[35092]:0x14cb866)
+    at wasm.wasm.wasm[1883d881a7905053]::transform_sync (wasm://wasm/wasm.wasm-084a3e6e:wasm-function[1005]:0x666203)
+    at wasm.wasm.wasm_bindgen_futures[9d7b310d6153a321]::future_to_promise::<wasm[1883d881a7905053]::transform::{closure#0}>::{closure#0}::{closure#0} (wasm://wasm/wasm.wasm-084a3e6e:wasm-function[13850]:0x11b9878)
+    at wasm.wasm.<wasm_bindgen_futures[9d7b310d6153a321]::queue::Queue>::new::{closure#0} (wasm://wasm/wasm.wasm-084a3e6e:wasm-function[9603]:0xff85b8)
+    at wasm.wasm.<dyn core[f69e0e472a72c355]::ops::function::FnMut<(_,), Output = _> as wasm_bindgen[d64814e1a33cf728]::closure::WasmClosure>::describe::invoke::<wasm_bindgen[d64814e1a33cf728]::JsValue, ()> (wasm://wasm/wasm.wasm-084a3e6e:wasm-function[34561]:0x14c7a1b)
+    at wasm.wasm.closure5233 externref shim (wasm://wasm/wasm.wasm-084a3e6e:wasm-function[35955]:0x14d0e94) 
+TypeError: Cannot read properties of undefined (reading '/_app')
+    at ignore-listed frames
+⨯ TypeError: Cannot read properties of undefined (reading '/_app')
+    at ignore-listed frames
+⨯ TypeError: Cannot read properties of undefined (reading '/_app')
+    at ignore-listed frames
+TypeError: Cannot read properties of undefined (reading '/_app')
+    at ignore-listed frames
+⨯ TypeError: Cannot read properties of undefined (reading '/_app')
+    at ignore-listed frames
+TypeError: Cannot read properties of undefined (reading '/_app')
+    at ignore-listed frames
+TypeError: Cannot read properties of undefined (reading '/_app')
+    at ignore-listed frames
+⨯ TypeError: Cannot read properties of undefined (reading '/_app')
+    at ignore-listed frames
+TypeError: Cannot read properties of undefined (reading '/_app')
+    at ignore-listed frames
+ GET /study-guide 500 in 3.8s (next.js: 317ms, proxy.ts: 3.4s, application-code: 42ms)
+ GET /study-guide 500 in 3.8s (next.js: 317ms, proxy.ts: 3.4s, application-code: 44ms)
+TypeError: Cannot read properties of undefined (reading '/_app')
+    at ignore-listed frames
+⨯ TypeError: Cannot read properties of undefined (reading '/_app')
+    at ignore-listed frames
+⨯ TypeError: Cannot read properties of undefined (reading '/_app')
+    at ignore-listed frames
+TypeError: Cannot read properties of undefined (reading '/_app')
+    at ignore-listed frames
+⨯ TypeError: Cannot read properties of undefined (reading '/_app')
+    at ignore-listed frames
+TypeError: Cannot read properties of undefined (reading '/_app')
+    at ignore-listed frames
+TypeError: Cannot read properties of undefined (reading '/_app')
+    at ignore-listed frames
+⨯ TypeError: Cannot read properties of undefined (reading '/_app')
+    at ignore-listed frames
+TypeError: Cannot read properties of undefined (reading '/_app')
+    at ignore-listed frames
+ GET /study-guide 500 in 187ms (next.js: 111ms, proxy.ts: 42ms, application-code: 34ms)
+ GET /study-guide 500 in 187ms (next.js: 111ms, proxy.ts: 42ms, application-code: 34ms)
+⨯ ./src/app/study-guide/page.tsx
+Error:   x Unterminated regexp literal
+    ,-[D:\New folder (24)\study-guide\src\app\study-guide\page.tsx:49:1]
+ 46 |           </div>
+ 47 |         </main>
+ 48 |       </div>
+ 49 |     </>
+    :      ^^
+ 50 |   );
+ 51 | }
+    `----
+
+Caused by:
+    0: failed to process js file
+    1: Syntax Error
+    at wasm.wasm.__wbindgen_error_new externref shim (wasm://wasm/wasm.wasm-084a3e6e:wasm-function[35092]:0x14cb866)
+    at wasm.wasm.wasm[1883d881a7905053]::transform_sync (wasm://wasm/wasm.wasm-084a3e6e:wasm-function[1005]:0x666203)
+    at wasm.wasm.wasm_bindgen_futures[9d7b310d6153a321]::future_to_promise::<wasm[1883d881a7905053]::transform::{closure#0}>::{closure#0}::{closure#0} (wasm://wasm/wasm.wasm-084a3e6e:wasm-function[13850]:0x11b9878)
+    at wasm.wasm.<wasm_bindgen_futures[9d7b310d6153a321]::queue::Queue>::new::{closure#0} (wasm://wasm/wasm.wasm-084a3e6e:wasm-function[9603]:0xff85b8)
+    at wasm.wasm.<dyn core[f69e0e472a72c355]::ops::function::FnMut<(_,), Output = _> as wasm_bindgen[d64814e1a33cf728]::closure::WasmClosure>::describe::invoke::<wasm_bindgen[d64814e1a33cf728]::JsValue, ()> (wasm://wasm/wasm.wasm-084a3e6e:wasm-function[34561]:0x14c7a1b)
+    at wasm.wasm.closure5233 externref shim (wasm://wasm/wasm.wasm-084a3e6e:wasm-function[35955]:0x14d0e94)
+Import trace for requested module:
+./src/app/study-guide/page.tsx
+⨯ ./src/app/study-guide/page.tsx
+Error:   x Unterminated regexp literal
+    ,-[D:\New folder (24)\study-guide\src\app\study-guide\page.tsx:49:1]
+ 46 |           </div>
+ 47 |         </main>
+ 48 |       </div>
+ 49 |     </>
+    :      ^^
+ 50 |   );
+ 51 | }
+    `----
+
+Caused by:
+    0: failed to process js file
+    1: Syntax Error
+    at wasm.wasm.__wbindgen_error_new externref shim (wasm://wasm/wasm.wasm-084a3e6e:wasm-function[35092]:0x14cb866)
+    at wasm.wasm.wasm[1883d881a7905053]::transform_sync (wasm://wasm/wasm.wasm-084a3e6e:wasm-function[1005]:0x666203)
+    at wasm.wasm.wasm_bindgen_futures[9d7b310d6153a321]::future_to_promise::<wasm[1883d881a7905053]::transform::{closure#0}>::{closure#0}::{closure#0} (wasm://wasm/wasm.wasm-084a3e6e:wasm-function[13850]:0x11b9878)
+    at wasm.wasm.<wasm_bindgen_futures[9d7b310d6153a321]::queue::Queue>::new::{closure#0} (wasm://wasm/wasm.wasm-084a3e6e:wasm-function[9603]:0xff85b8)
+    at wasm.wasm.<dyn core[f69e0e472a72c355]::ops::function::FnMut<(_,), Output = _> as wasm_bindgen[d64814e1a33cf728]::closure::WasmClosure>::describe::invoke::<wasm_bindgen[d64814e1a33cf728]::JsValue, ()> (wasm://wasm/wasm.wasm-084a3e6e:wasm-function[34561]:0x14c7a1b)
+    at wasm.wasm.closure5233 externref shim (wasm://wasm/wasm.wasm-084a3e6e:wasm-function[35955]:0x14d0e94)
+Import trace for requested module:
+./src/app/study-guide/page.tsx
+⨯ ./src/app/study-guide/page.tsx
+Error:   x Unterminated regexp literal
+    ,-[D:\New folder (24)\study-guide\src\app\study-guide\page.tsx:92:1]
+ 89 |         />
+ 90 |       </main>
+ 91 |       </div>
+ 92 |     </>
+    :      ^^
+ 93 |   );
+ 94 | }
+    `----
+
+Caused by:
+    0: failed to process js file
+    1: Syntax Error
+    at wasm.wasm.__wbindgen_error_new externref shim (wasm://wasm/wasm.wasm-084a3e6e:wasm-function[35092]:0x14cb866)
+    at wasm.wasm.wasm[1883d881a7905053]::transform_sync (wasm://wasm/wasm.wasm-084a3e6e:wasm-function[1005]:0x666203)
+    at wasm.wasm.wasm_bindgen_futures[9d7b310d6153a321]::future_to_promise::<wasm[1883d881a7905053]::transform::{closure#0}>::{closure#0}::{closure#0} (wasm://wasm/wasm.wasm-084a3e6e:wasm-function[13850]:0x11b9878)
+    at wasm.wasm.<wasm_bindgen_futures[9d7b310d6153a321]::queue::Queue>::new::{closure#0} (wasm://wasm/wasm.wasm-084a3e6e:wasm-function[9603]:0xff85b8)
+    at wasm.wasm.<dyn core[f69e0e472a72c355]::ops::function::FnMut<(_,), Output = _> as wasm_bindgen[d64814e1a33cf728]::closure::WasmClosure>::describe::invoke::<wasm_bindgen[d64814e1a33cf728]::JsValue, ()> (wasm://wasm/wasm.wasm-084a3e6e:wasm-function[34561]:0x14c7a1b)
+    at wasm.wasm.closure5233 externref shim (wasm://wasm/wasm.wasm-084a3e6e:wasm-function[35955]:0x14d0e94)
+Import trace for requested module:
+./src/app/study-guide/page.tsx
